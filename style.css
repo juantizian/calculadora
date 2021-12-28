@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family:'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #41002d;
+}
+
+input {
+    margin: 2px;
+    border: none;
+    border-radius: 3px;
+}
+input[type=text] {
+    width: 99%;
+    height: 40px;
+
+}
+
+input[type=button] {
+   width: calc(100% - 4px);
+   height: 50px;
+   cursor: pointer;
+   
+}
+
+div#calculadora {
+    box-shadow: 0 0 20px black;
+}
+
+div#calculadora div {
+    display: flex;
+}
+
+div#calculadora input:nth-child(4) {
+    background-color: lightslategrey;
+}
+
+div#quarta input:nth-child(1) {
+  background-color: #f11a1a;
+  color: white;
+}
+
+div#quarta input:nth-child(1), div#calculadora{
+    border-bottom-left-radius: 35px;
+}
+div#quarta input:nth-child(4), div#calculadora {
+    border-bottom-right-radius: 35px;
+}
+
+div#quarta input:nth-child(3) {
+    background-color: #1a4cfe;
+    color: white;
+  }
+
+
+input[type=button]:hover {
+    filter: brightness(60%);
+    transition: ease 0.5s;
+}
+
+input[type=button]:active {
+    transform: scale(0.8);
+}
